@@ -52,8 +52,8 @@
     async function shareMsg() {
       await liff.shareTargetPicker(
         {
-          type: "text",
-          text: "this message was sent by ShareTargetPicker"
+          "type":"text",
+            "text":"Hello, user"
         }
       )
     }
@@ -131,7 +131,7 @@
 
       } else {
         document.getElementById("btnMsg").style.display = "none"
-        document.getElementById("btnScanCode").style.display = "none"
+        // document.getElementById("btnScanCode").style.display = "none"
         document.getElementById("btnClose").style.display = "none"
 
       }
