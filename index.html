@@ -50,10 +50,12 @@
     }
 
     async function shareMsg() {
-      await liff.shareTargetPicker({
-        "type": "text",
-        "text": "this message was sent by ShareTargetPicker"
-      })
+      await liff.shareTargetPicker(
+        {
+          type: "text",
+          text: "this message was sent by ShareTargetPicker"
+        }
+      )
     }
 
     function logOut() {
@@ -145,10 +147,10 @@
         getContext()
         getFriendship()
 
-      }else{
+      } else {
         liff.login()
       }
-  
+
       // createUniversalLink()
     }
     main()
