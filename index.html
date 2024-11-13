@@ -53,6 +53,8 @@
     }
 
     function logOut() {
+      liff.logout()
+      window.location.reload()
     }
 
     function closed() {
@@ -139,6 +141,8 @@
         getContext()
         getFriendship()
 
+      }else{
+        liff.login()
       }
   
       // createUniversalLink()
